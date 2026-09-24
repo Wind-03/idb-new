@@ -1,0 +1,11 @@
+{
+  "name": "idb-website",
+  "version": "1.0.0",
+  "description": "Ife Development Board website with Vercel-native admin login",
+  "dependencies": {
+    "@vercel/kv": "^2.0.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cookie": "^0.6.0"
+  }
+}

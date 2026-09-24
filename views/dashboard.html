@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard — Ife Development Board</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/admin-dashboard/dashboard.css">
+</head>
+<body style="background: var(--cream-50);">
+
+<header class="dash-header">
+  <div class="dash-header-inner">
+    <div class="dash-brand">
+      <div class="brand-mark"><span>IF</span></div>
+      <div>
+        <div style="font-weight:600; color:var(--terracotta-900); font-size:0.95rem;">IDB Admin Dashboard</div>
+        <div style="font-size:0.72rem; color:var(--stone-500);" id="dash-email">Loading…</div>
+      </div>
+    </div>
+    <div style="display:flex; gap:1rem; align-items:center;">
+      <a href="/" target="_blank" style="font-size:0.85rem; color:var(--terracotta-700); font-weight:600;">View Site ↗</a>
+      <a href="/logout" class="btn" style="padding:0.5rem 1.1rem;">Log Out</a>
+    </div>
+  </div>
+</header>
+
+<div class="dash-body">
+  <nav class="dash-tabs" id="dash-tabs"></nav>
+  <main class="dash-main" id="dash-main">
+    <div class="dash-list-header">
+      <h2 id="dash-section-title">Loading…</h2>
+      <button class="btn" id="dash-add-btn">+ Add New</button>
+    </div>
+    <div id="dash-list"></div>
+  </main>
+</div>
+
+<!-- Edit/Add modal -->
+<div class="dash-modal-overlay" id="dash-modal-overlay">
+  <div class="dash-modal">
+    <div class="dash-modal-header">
+      <h3 id="dash-modal-title">Edit Item</h3>
+      <button class="dash-modal-close" id="dash-modal-close">✕</button>
+    </div>
+    <div id="dash-modal-fields"></div>
+    <div class="dash-modal-actions">
+      <button class="btn" id="dash-delete-btn" style="border-color:#B3402A; color:#B3402A;">Delete</button>
+      <button class="btn" id="dash-save-btn">Save</button>
+    </div>
+  </div>
+</div>
+
+<script src="/admin-dashboard/dashboard.js"></script>
+</body>
+</html>
