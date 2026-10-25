@@ -6,8 +6,7 @@
     { "source": "/admin", "destination": "/api/admin" }
   ],
   "functions": {
-    "api/admin.js": {
-      "includeFiles": "views/**"
-    }
-  }
+  "api/admin.js": { "includeFiles": "views/**" },
+  "api/content/[type].js": { "includeFiles": "content/**" }
+}
 }
